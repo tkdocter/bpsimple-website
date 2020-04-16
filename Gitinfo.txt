@@ -13,6 +13,7 @@ git add *.html                update the index for the next commmit
 git commit -m "Added letr D"  commit the change with a description for it
 git log --oneline --decorate  Is a compact gitlog shows history of changes
 git log --oneline --decorate --author=tkdocter   See changes for one user only
+ctl c to cancel out a gitbash command like if see a >
 
 A branch is an independent line of development in a project with its own seperat history of commits
 You can list the branches in the local repository by running the git branch command
