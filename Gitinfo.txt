@@ -1,0 +1,70 @@
+GitInfo
+tkdocter small t Wg  b9!
+Https://github.com/tkdocter/bpsimple-website
+c:/Users/docto/bpsimple-website
+
+c/users/docto/gitbp
+2nd email Gkdocter@gmail.com 
+
+Commands in Gitbash
+git log --oneline --decorate  Is a compact gitlog
+git status                    Git status
+git add *.html                update the index for the next commmit
+git commit -m "Added letr D"  commit the change with a description for it
+git log --oneline --decorate  Is a compact gitlog shows history of changes
+git log --oneline --decorate --author=tkdocter   See changes for one user only
+
+A branch is an independent line of development in a project with its own seperat history of commits
+You can list the branches in the local repository by running the git branch command
+The --remote switch shows the local of the branches in the remote repository
+git branch
+git branch --remote
+
+git diff pilots.html        changes not staged in index
+git diff --cached pilots.html changes between index and the last commit
+git diff HEAD pilots.html   changes since the last commit
+
+
+1. Stage the change to index
+git add *.html
+2. Commit changes with description
+git commit -m "Added letter F"
+
+Sync to Remote Repository from local working directory
+git push origin master
+
+Undoing changes - 3 types
+1. Undoing changes in working directory before staging
+2. Undoing changes after staging before committing
+3. Undoing committed changes
+
+1. recover changes in working directory
+git checkout pilots.html
+2. Undoing changes after staging before committing
+git reset HEAD pilots.html
+git checkout pilots.html
+3. Undoing Committed changes
+git revert d5cfe09 --no-edit    Note the d5cfe09 is hash from git log of the unwanted commit no edit means don't bring up editor
+
+git tag to tag a stable version of a project
+git tag -a v0.1 4903b61 -m "v0.1"  tab using hash of commit of letter F
+can now use this tag instead of hashtag to refer to this version of the website
+
+Create a branch to work with without affecting the Master
+git branch test   --creates the branch called test
+git checkout test --switch to a specific branch making it the current branch
+git branch   --- list all branches with a * by the current one
+
+git mv style/*.css ./   moves files do this way not file manager can skip git add
+
+MERGED g-h-i into Master -- switch to master with git checkout master then do merge as follows
+git merge g-h-i
+
+
+
+
+
+
+
+
+
